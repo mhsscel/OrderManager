@@ -1,0 +1,984 @@
+{
+	"info": {
+		"_postman_id": "b661d88a-40e9-4875-8a06-b4ad8323737d",
+		"name": "OrderManager",
+		"description": "OrderManager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5611485"
+	},
+	"item": [
+		{
+			"name": "Stock Movement",
+			"item": [
+				{
+					"name": "Create Stock Movement",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/api/stockMovements",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"stockMovements"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/stockMovements",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"stockMovements"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 16 Jul 2024 00:46:27 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": 1,\n \"creationDate\": \"2024-07-16T00:46:27.580+00:00\",\n \"itemId\": 1,\n \"itemName\": \"Sample Item\",\n \"quantity\": 30\n}"
+						}
+					]
+				},
+				{
+					"name": "List Stock Movement",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL1}}/api/stockMovements",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"stockMovements"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL1}}/api/stockMovements",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"stockMovements"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 16 Jul 2024 00:46:46 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"id\": 1,\n  \"creationDate\": \"2024-07-16T00:46:27.580+00:00\",\n  \"item\": {\n   \"id\": 1,\n   \"name\": \"Sample Item\",\n   \"quantity\": 25\n  },\n  \"quantity\": 25\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get a StockMovement by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL1}}/api/stockMovements/1",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"stockMovements",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL1}}/api/stockMovements/1",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"stockMovements",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 16 Jul 2024 00:48:56 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": 1,\n \"creationDate\": \"2024-07-16T00:46:27.580+00:00\",\n \"item\": {\n  \"id\": 1,\n  \"name\": \"Sample Item\",\n  \"quantity\": 25\n },\n \"quantity\": 25\n}"
+						}
+					]
+				},
+				{
+					"name": "Update a StockMovement",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/api/stockMovements/7",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"stockMovements",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/stockMovements/7",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"stockMovements",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jul 2024 22:47:18 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": 7,\n \"creationDate\": null,\n \"itemId\": 3,\n \"itemName\": \"Updated Item Name\",\n \"quantity\": 20\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete a StockMovement",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL1}}/api/stockMovements/13",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"stockMovements",
+								"13"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "no-content / 204",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL1}}/api/stockMovements/13",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"stockMovements",
+										"13"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 16 Jul 2024 00:28:27 GMT"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/api/users",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/users",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 16 Jul 2024 00:46:16 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": 1,\n \"name\": \"User Name\",\n \"email\": \"user@example.com\"\n}"
+						}
+					]
+				},
+				{
+					"name": "List Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL1}}/api/users",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL1}}/api/users",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 16 Jul 2024 00:09:30 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"id\": 1,\n  \"name\": \"User Name\",\n  \"email\": \"user@example.com\"\n }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Item",
+			"item": [
+				{
+					"name": "Create Item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/api/items",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"items"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/items",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"items"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 16 Jul 2024 00:46:18 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": 1,\n \"name\": \"Sample Item\",\n \"quantity\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "List Items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL1}}/api/items",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"items"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL1}}/api/items",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"items"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 16 Jul 2024 00:29:40 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"id\": 2,\n  \"name\": \"Sample Item\",\n  \"quantity\": 25\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Update Item",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/api/items/2",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"items",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/items/2",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"items",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 16 Jul 2024 00:29:50 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": 2,\n \"name\": \"Updated Item Name\",\n \"quantity\": 25\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL1}}/api/items/1",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"items",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL1}}/api/items/1",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"items",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 16 Jul 2024 00:28:31 GMT"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/api/orders",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/orders",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 16 Jul 2024 00:46:38 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": 1,\n \"creationDate\": \"2024-07-16T00:46:37.023+00:00\",\n \"item\": {\n  \"id\": 1,\n  \"name\": \"Sample Item\",\n  \"quantity\": 25\n },\n \"quantity\": 5,\n \"fulfilledQuantity\": 5,\n \"completed\": true,\n \"user\": {\n  \"id\": 1,\n  \"name\": \"User Name\",\n  \"email\": \"user@example.com\"\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "List Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL1}}/api/orders",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL1}}/api/orders",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 16 Jul 2024 00:48:42 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"id\": 1,\n  \"creationDate\": \"2024-07-16T00:46:37.023+00:00\",\n  \"item\": {\n   \"id\": 1,\n   \"name\": \"Sample Item\",\n   \"quantity\": 25\n  },\n  \"quantity\": 5,\n  \"fulfilledQuantity\": 5,\n  \"completed\": true,\n  \"user\": {\n   \"id\": 1,\n   \"name\": \"User Name\",\n   \"email\": \"user@example.com\"\n  }\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Order by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL1}}/api/orders/1",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL1}}/api/orders/1",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jul 2024 23:41:49 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": 1,\n \"creationDate\": \"2024-07-15T23:39:46.078+00:00\",\n \"item\": {\n  \"id\": 1,\n  \"name\": \"Updated Item Name\"\n },\n \"quantity\": 5,\n \"fulfilledQuantity\": 0,\n \"completed\": false,\n \"user\": {\n  \"id\": 1,\n  \"name\": \"User Name\",\n  \"email\": \"user@example.com\"\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Order",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/api/orders/1",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/orders/1",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jul 2024 23:42:07 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": 1,\n \"creationDate\": \"2024-07-15T23:42:07.976+00:00\",\n \"item\": {\n  \"id\": 1,\n  \"name\": \"Updated Item Name\"\n },\n \"quantity\": 5,\n \"fulfilledQuantity\": 0,\n \"completed\": false,\n \"user\": {\n  \"id\": 1,\n  \"name\": \"User Name\",\n  \"email\": \"user@example.com\"\n }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL1}}/api/orders/1",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "no-content / 204",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL1}}/api/orders/1",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										"1"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jul 2024 22:18:25 GMT"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL1",
+			"value": "http://localhost:8081",
+			"type": "any"
+		}
+	]
+}
