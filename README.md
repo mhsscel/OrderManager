@@ -161,14 +161,14 @@ Para configurar o envio de e-mails usando uma conta Google, você precisa gerar 
 - Método: POST
 - URL: `http://localhost:8081/api/stockMovements`
 - Payload:
-  ```json      
+```json      
  {      
        "item": {      
          "id": 1      
        },      
        "quantity": 25      
      }      
- ```   
+```   
 - **Listar Stock Movements**
 - Método: GET
 - URL: `http://localhost:8081/api/stockMovements`
@@ -181,14 +181,14 @@ Para configurar o envio de e-mails usando uma conta Google, você precisa gerar 
 - Método: PUT
 - URL: `http://localhost:8081/api/stockMovements/{id}`
 - Payload:
-  ```json      
+```json      
  {      
        "item": {      
          "id": 1      
        },      
        "quantity": 30      
      }      
- ```   
+```   
 - **Deletar Stock Movement**
 - Método: DELETE
 - URL: `http://localhost:8081/api/stockMovements/{id}`
@@ -199,12 +199,12 @@ Para configurar o envio de e-mails usando uma conta Google, você precisa gerar 
 - Método: POST
 - URL: `http://localhost:8081/api/users`
 - Payload:
-  ```json      
+```json      
  {      
        "name": "User Name",      
        "email": "user@example.com"      
      }      
- ```   
+```   
 - **Listar Users**
 - Método: GET
 - URL: `http://localhost:8081/api/users`
@@ -215,11 +215,11 @@ Para configurar o envio de e-mails usando uma conta Google, você precisa gerar 
 - Método: POST
 - URL: `http://localhost:8081/api/items`
 - Payload:
-  ```json      
+```json      
  {      
        "name": "Sample Item"      
      }      
- ```   
+```   
 - **Listar Items**
 - Método: GET
 - URL: `http://localhost:8081/api/items`
@@ -228,11 +228,11 @@ Para configurar o envio de e-mails usando uma conta Google, você precisa gerar 
 - Método: PUT
 - URL: `http://localhost:8081/api/items/{id}`
 - Payload:
-  ```json      
+```json      
  {      
        "name": "Updated Item Name"      
      }      
- ```   
+```   
 - **Deletar Item**
 - Método: DELETE
 - URL: `http://localhost:8081/api/items/{id}`
@@ -243,7 +243,7 @@ Para configurar o envio de e-mails usando uma conta Google, você precisa gerar 
 - Método: POST
 - URL: `http://localhost:8081/api/orders`
 - Payload:
-  ```json      
+```json      
  {      
        "item": {      
          "id": 1      
@@ -253,7 +253,7 @@ Para configurar o envio de e-mails usando uma conta Google, você precisa gerar 
          "id": 1      
        }      
      }      
- ```   
+```   
 - **Listar Orders**
 - Método: GET
 - URL: `http://localhost:8081/api/orders`
@@ -266,7 +266,7 @@ Para configurar o envio de e-mails usando uma conta Google, você precisa gerar 
 - Método: PUT
 - URL: `http://localhost:8081/api/orders/{id}`
 - Payload:
-  ```json      
+```json      
  {      
        "quantity": 10,      
        "fulfilledQuantity": 5,      
@@ -278,7 +278,7 @@ Para configurar o envio de e-mails usando uma conta Google, você precisa gerar 
          "id": 1      
        }      
      }      
- ```   
+```   
 - **Deletar Order**
 - Método: DELETE
 - URL: `http://localhost:8081/api/orders/{id}`
